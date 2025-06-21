@@ -93,6 +93,6 @@ Scrolls simulados podem ser lentos, inconsistentes e até causar perda de mensag
 ✅ Alternativa adotada:
 Diante dessas limitações, o projeto armazena apenas as últimas mensagens visíveis no preview dos contatos (nome, último texto e horário), garantindo:
 
-Uma prévia fiel da conversa
+
 Ordenação dos contatos por atividade
 Possibilidade de resposta automatizada
