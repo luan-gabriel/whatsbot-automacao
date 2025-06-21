@@ -1,0 +1,32 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bootstrap": "node bootstrap.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "frontend": "cd frontend && npm start",
+    "backend": "cd backend && node index.js",
+    "puppeteer": "cd backend && node scrape.js",
+    "dev": "concurrently -n FRONTEND,BACKEND -c green,cyan \"npm run frontend\" \"npm run backend\"",
+    "dev:all": "concurrently -n FRONTEND,BACKEND,BOTS -c green,cyan,magenta \"npm run frontend\" \"npm run backend\" \"npm run puppeteer\""
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "puppeteer": "^24.10.2",
+    "sqlite3": "^5.1.7"
+  },
+  
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "concurrently": "^9.1.2",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.10"
+  }
+}
