@@ -9,7 +9,7 @@ Um projeto completo de automação com WhatsApp Web, combinando **Puppeteer**, *
 ### 📸 Automação com Puppeteer
 - Abre o WhatsApp Web com navegador visível (`headless: false`)
 - Aguarda login manual via QR Code
-- Extrai nome, última mensagem e horário dos contatos
+- Extrai nome dos contatos ou numeros
 - Gera avatares fictícios via DiceBear com base no nome
 - Salva todos os dados em `contatosExtraidos.json`
 
@@ -18,8 +18,6 @@ Um projeto completo de automação com WhatsApp Web, combinando **Puppeteer**, *
 - Tabela `contatos` contendo:
   - `name` — nome do contato
   - `avatar` — link do avatar gerado
-  - `lastMessage` — última mensagem visível
-  - `time` — horário da última mensagem
 
 ### 💻 Interface Web com React
 - Lista contatos reais com avatares dinâmicos
@@ -35,41 +33,33 @@ Um projeto completo de automação com WhatsApp Web, combinando **Puppeteer**, *
 
 ## 🚀 Como Executar
 
-1. Instale as dependências:
+1. Instale as dependências!!!!!!!!!!!!:
 
 ```bash
+terminal do VS CODE ou similar, adicione esses comandos:
+cd frontend
 npm install
+
 
 Inicie tudo com um único comando:
 npm run bootstrap
 
+
 Esse comando irá:
-
 Abrir o WhatsApp Web no navegador
-
 Aguardar login via QR Code
-
 Extrair os contatos da interface
-
 Atribuir avatares fictícios
-
 Iniciar frontend e backend simultaneamente
-
 Acesse o sistema em: http://localhost:3000
 
 🧪 Tecnologias Utilizadas
 Puppeteer
-
 React
-
 Node.js
-
 Express
-
 SQLite
-
 fs-extra
-
 DiceBear Avatars
 
  Créditos
@@ -91,7 +81,7 @@ Limitações de performance e consistência:
 Scrolls simulados podem ser lentos, inconsistentes e até causar perda de mensagens.
 
 ✅ Alternativa adotada:
-Diante dessas limitações, o projeto armazena apenas as últimas mensagens visíveis no preview dos contatos (nome, último texto e horário), garantindo:
+Diante dessas limitações, o projeto armazena apenas contatos visíveis no preview dos contatos (nome ou numeros) frizando que o envio de mensagens reais e garantido:
 
 
 Ordenação dos contatos por atividade
